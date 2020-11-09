@@ -17,7 +17,7 @@ public class Magazin {
     {
         produse.remove(p);
     }
-    public void removeAngajat(Angajat a){angajati.add(a);}
+    public void removeAngajat(Angajat a){angajati.remove(a);}
     @Override
     public String toString() {
         StringBuilder builder=new StringBuilder();
