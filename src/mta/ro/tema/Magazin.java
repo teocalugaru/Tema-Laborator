@@ -4,17 +4,20 @@ import java.util.ArrayList;
 
 public class Magazin {
     private ArrayList<Produs> produse;
+    private ArrayList<Angajat> angajati;
     public Magazin(){
-        produse=new ArrayList<>();
+        produse=new ArrayList<>();angajati=new ArrayList<>();
     }
     public void addProduct(Produs p)
     {
         produse.add(p);
     }
+    public void addAngajat(Angajat a){angajati.add(a);}
     public void removeProduct(Produs p)
     {
         produse.remove(p);
     }
+    public void removeAngajat(Angajat a){angajati.remove(a);}
     @Override
     public String toString() {
         StringBuilder builder=new StringBuilder();
