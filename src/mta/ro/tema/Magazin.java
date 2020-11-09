@@ -1,9 +1,11 @@
 package mta.ro.tema;
 
 import java.util.ArrayList;
+import java.util.Collections;
 
 public class Magazin {
     private ArrayList<Produs> produse;
+    private ArrayList<Angajat> angajati;
     public Magazin(){
         produse=new ArrayList<>();
     }
@@ -14,6 +16,14 @@ public class Magazin {
     public void removeProduct(Produs p)
     {
         produse.remove(p);
+    }
+    public void addAngajat(Angajat a)
+    {
+        angajati.add(a);
+    }
+    public void removeAngajat(Angajat a)
+    {
+        angajati.remove(a);
     }
     @Override
     public String toString() {
