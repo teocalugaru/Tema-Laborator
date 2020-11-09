@@ -13,8 +13,6 @@ public class Angajat {
         this.salariu=salariu;
         this.an_angajare=an_angajare;
     }
-
-
     @Override
     public String toString() {
         return "Angajatul cu numele "+ this.nume+", angajat in anul "+this.an_angajare+" are salariul de "+this.salariu;
